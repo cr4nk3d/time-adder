@@ -1,7 +1,7 @@
 const list = document.querySelector(".list");
 const addBtn = document.querySelector(".add");
 const resetBtn = document.querySelector(".reset");
-let seconds = 0;
+let s = 0;
 
 const resMin = document.querySelector(".res-min");
 const resSec = document.querySelector(".res-sec");
@@ -32,17 +32,21 @@ function createListItem() {
 }
 
 function addTime() {
-  console.log(list);
-  if (event.target.classList == "min") {
-    seconds += +event.target.value * 60;
-  } else if (event.target.classList == "second") {
-    seconds += +event.target.value;
-  }
-  console.log(Math.floor(seconds / 60));
-  console.log(seconds % 60);
+    const allItems = list.querySelectorAll(".item");
+  s = 0;
+  allItems.forEach((item) => {
+    let inp = item.querySelectorAll("input");
+    inp.forEach((i) => {
+      if (i.classList == "min") {
+        s += +i.value * 60;
+      } else if (i.classList == "second") {
+        s += +i.value;
+      }
+    });
+  });
 
-  let minutes = format(Math.floor(seconds / 60));
-  let sec = format(seconds % 60);
+  let minutes = format(Math.floor(s / 60));
+  let sec = format(s % 60);
   resMin.textContent = minutes;
   resSec.textContent = sec;
 }
