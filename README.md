@@ -1,25 +1,41 @@
-# ⏳ Time Adder
+# ⏳ Time Adder  
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Click%20Here-brightgreen)](https://cr4nk3d.github.io/time-adder/)
+A simple web app that lets you add multiple time values (minutes and seconds) and get the total time instantly.  
 
-A simple and intuitive **Time Adder** that allows you to sum multiple time values in minutes and seconds. You can also add extra time slots dynamically.
+## ✨ Features  
+✔ Add multiple time slots.  
+✔ Calculates total minutes and seconds.  
+✔ User-friendly interface with a clean layout.  
+✔ Reset button to clear all inputs.  
 
-## 🚀 Features
+## 🖼 Preview  
+![image](https://github.com/user-attachments/assets/8dd4cb0c-d262-4805-9bc6-1aeca7075705)
+  
 
-- Add multiple time values (minutes & seconds).
-- Dynamically add or remove time slots.
-- Get the total sum instantly.
+## 🚀 Live Demo  
+🔗 **[Try it here](https://cr4nk3d.github.io/time-adder/)**  
 
-## 🖥️ Live Demo
+## 🛠 How to Use  
+1. Enter values in the **minutes** and **seconds** fields.  
+2. Click the **ADD** button to calculate the total time.  
+3. Click **RESET** to clear all inputs and start over.  
 
-Try it here: **[Time Adder](https://cr4nk3d.github.io/time-adder/)**
+## 💽 Installation (Optional)  
+Clone the repository and open `index.html` in a browser:  
 
-## 🛠️ Technologies Used
-HTML
+```sh
+git clone https://github.com/CR4NK3D/time-adder.git
+cd time-adder
+```
 
-CSS
+Then, open `index.html` in your browser.  
 
-JavaScript
+## 📌 Tech Stack  
+- **HTML** – Structure  
+- **CSS** – Styling  
+- **JavaScript** – Logic & Functionality  
 
-## 🤝 Contributing
-Feel free to fork the repository and submit a pull request! Any improvements are welcome. 😊
+## 💡 Future Improvements  
+- Add hours support.  
+- Allow negative time values for adjustments.  
+- Mobile-friendly optimizations.  
